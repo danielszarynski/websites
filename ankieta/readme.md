@@ -1,0 +1,1 @@
+Ankieta napisana na potrzeby pracy inżynierskiej o statystyce.
