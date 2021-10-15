@@ -1,0 +1,8 @@
+Czy korzystasz z biletomatów stacjonarnych?
+tak 	nie
+	nie są mi po drodze 	czesto jest kolejka 	szybciej jest kupic bilet cyfrowy	mam wykupiony bilet długookresowy
+
+
+Czy korzystasz z biletomatów mobilnych (montowanych w pojazdach komunikacji miejskiej)?
+tak 	nie
+	ciągle się psują 	czesto jest kolejka 	szybciej jest kupic bilet cyfrowy	mam bilet długookresowy

@@ -1,0 +1,83 @@
+-1 Płeć
+   Mężczyzna
+   Kobieta
+
+0 Wiek
+  Do 26
+  27-40
+  41-60
+  Ponad 60
+
+1. Z jakich form zakupu biletu komunikacji miejskiej korzystasz? (możesz wybrać kilka)
+-Długookresowy w formie papierowej
+-Długookresowy w formie elektronicznej
+-Miesięczny w formie papierowej
+-Miesięczny w formie elektronicznej
+-Krótkookresowy (do godziny) w formie papierowej
+-Krótkookresowy (do godziny) w formie elektronicznej
+
+
+2.Czy w okolicy Twojego miejsca zamieszkania znajduje się biletomat?
+ Tak  Nie
+  |	|
+  |	2.2 Czy fakt braku biletomatu w okolicy Twojego miejsca zamieszkaniam wpłynął na decyzję wyboru aplikacji mobilnej zamiast biletu papierowego?
+  |        Tak  Nie
+  |		|
+  |              Posiadam bilet w wersji papierowej    Posiadam aplikację mobilną do kupowania biletów/Mam bilet cyfrowy
+  |
+ 2.1  Czy korzystasz z tego biletomatu?
+    Tak  Nie
+          |
+           Posiadam bilet w wersji papierowej    Posiadam aplikację mobilną do kupowania biletów/Mam bilet cyfrowy 
+
+
+
+3. Czy korzystasz z biletomatów stacjonarnych ?
+ Tak  Nie
+  |    |	
+  |     Ponieważ? input
+  |
+  3.1 Czy podczas korzystania z takiego biletomatu wynikły jakieś niedogodności? (np długa kolejka, problem z działaniem biletomatu...)
+	input
+
+
+
+4 Czy korzystasz z biletomatów mobilnych(umieszczonych w pojazdach komunikacji miejskiej)?
+ Tak  Nie
+  |    |	
+  |     Ponieważ? input
+  |
+  4.1 Czy podczas korzystania z takiego biletomatu wynikły jakieś niedogodności? (np długa kolejka, problem z działaniem biletomatu...)
+	input
+
+
+
+Jeżeli wybrano w 1. pyt odpowiedzi z "w formie elektronicznej" || w pyt 2.-tak && 2.1-nie && odp-2  || w pyt 2-nie && 2.2-tak ||  2-nie && 2.2-nie && odp-2
+| |
+|  5 Z jakiej aplikacji do kupowania biletów komunikacji miejskiej korzystasz? (Możesz wybrać kilka)
+|  Skycash    moBiLET    zbiletem.pl    Mobilna Karta Miejska    Z aplikacji bankowej
+| |
+|  6. Co miało wpływ na wybór aplikacji do kupowania biletów komunikacji miejskiej?
+|   Model smartfona(np aplikacja się zacinała)    Zainstalowany na telefonie system operacyjny(np iOS, Android, Backberry) nie wspierał innej aplikacji     Wybrana aplikacja spełnia moje oczekiwania    Intuicyjność w poruszaniu się po   |   aplikacji    Szybkość działania aplikacji     Aplikacja umożliwia wyświetlenie zakupionego biletu, nawet przy braku dostępu do internetu    Aplikacja umożliwia podłączenie mojej karty kredytowej    Aplikacja udostępnia dodatkowe      |   funkcjonalności (np zakup biletu pociągu, wykupienie biletu parkingowego w strefie płatnego parkowania)    Aplikacja posiada promocje i zniżki    Aplikację polecili mi znajomi/rodzina       
+| | 
+|  7. Korzystam z biletu elektronicznego, ponieważ: (wybierz jak bardzo zgadzasz się z odpowiedzią)
+|  Mam go zawsze przy sobie    Nie da się go zgubić    Jest bardziej odporny na warunki atmosferyczne niż wersja papierowa    Szybciej da się go kupić(nie tracę czasu na stanie w kolejce do biletomatu)    Jest bezpieczniejszą, dla |   zdrowia, formą zakupu biletu    
+| |
+| Jeżeli w 1. pyt wybrano bilet krótkookresowy 
+|   8. Kupuję bilety krótkookresowe, ponieważ :    (wybierz jak bardzo zgadzasz się z odpowiedzią)
+|      Rzadko korzystam z komunikacji miejskiej    Bardziej mi się to opłaca  
+| |  
+| Jeżeli w 1. pyt wybrano bilet Długookresowy/miesięczny
+|   9.Kupuję bilety długookresowe, ponieważ:     (wybierz jak bardzo zgadzasz się z odpowiedzią)
+|     Dużo korzystam z komunikacji miejskiej    Mam świadomość, że bilet mam zawsze przy sobie    Nie muszę się martwić kiedy wygasa bilet, ponieważ aplikacja odpowiednio wcześnie mnie poinformuje o tym terminie     
+|
+| 10. Dodatkowe spostrzeżenia i opinie na temat aplikacji do kupowania biletów komunikacji miejskiej w Szczecinie
+|     input
+|
+|  Dzięki za wypełnienie ankiety
+|
+else
+Dzieki za wypelnienie ankiety
+
+
+ 

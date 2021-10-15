@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="60" viewBox="0 0 52 60">
+  <defs>
+    <clipPath id="clip-pokaż_zgłoszenia_3">
+      <rect width="52" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="pokaż_zgłoszenia_3" data-name="pokaż zgłoszenia – 3" clip-path="url(#clip-pokaż_zgłoszenia_3)">
+    <path id="Icon_ionic-md-person" data-name="Icon ionic-md-person" d="M30.234,34.732c7.077,0,12.867-6.8,12.867-15.116S37.311,4.5,30.234,4.5,17.367,11.3,17.367,19.616,23.156,34.732,30.234,34.732Zm0,7.558C21.71,42.29,4.5,47.392,4.5,57.407v7.558H55.967V57.407C55.967,47.392,38.757,42.29,30.234,42.29Z" transform="translate(-4.133 -4.589)" fill="#fff"/>
+  </g>
+</svg>

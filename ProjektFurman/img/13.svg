@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="60" viewBox="0 0 52 60">
+  <defs>
+    <clipPath id="clip-pokaż_zgłoszenia_13">
+      <rect width="52" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="pokaż_zgłoszenia_13" data-name="pokaż zgłoszenia – 13" clip-path="url(#clip-pokaż_zgłoszenia_13)">
+    <path id="Icon_awesome-lock" data-name="Icon awesome-lock" d="M46.358,26.467H43.577V17.959A17.812,17.812,0,0,0,25.961,0,17.812,17.812,0,0,0,8.345,17.959v8.507H5.563A5.619,5.619,0,0,0,0,32.138V54.824A5.619,5.619,0,0,0,5.563,60.5h40.8a5.619,5.619,0,0,0,5.563-5.671V32.138A5.619,5.619,0,0,0,46.358,26.467Zm-12.053,0H17.616V17.959a8.346,8.346,0,1,1,16.689,0Z" transform="translate(0.913 0.185)"/>
+  </g>
+</svg>

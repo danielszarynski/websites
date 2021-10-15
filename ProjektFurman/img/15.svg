@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="48" viewBox="0 0 42 48">
+  <defs>
+    <clipPath id="clip-pokaż_zgłoszenia_15">
+      <rect width="42" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="pokaż_zgłoszenia_15" data-name="pokaż zgłoszenia – 15" clip-path="url(#clip-pokaż_zgłoszenia_15)">
+    <g id="zaloguj" transform="translate(3.267 2.848)">
+      <g id="Icon_feather-log-in" data-name="Icon feather-log-in" transform="translate(0)">
+        <path id="Path_11" data-name="Path 11" d="M33.111,4.5H26.037C24.084,4.5,22.5,6.606,22.5,9.2V42.124c0,2.6,1.584,4.7,3.537,4.7h7.074" transform="translate(-22.5 -4.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <path id="Path_12" data-name="Path 12" d="M22.5,25.5,15,18l7.5-7.5" transform="translate(-5.627 3.503)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <path id="Path_13" data-name="Path 13" d="M4.5,18H26.783" transform="translate(8.778 3.503)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+    </g>
+  </g>
+</svg>

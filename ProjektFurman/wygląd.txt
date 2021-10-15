@@ -1,0 +1,13 @@
+godzina za szeroka- fajnie jakby dało się ją zmniejszyć a np trasy powiększyć -tabela wyjazdy
+
+menu- po pojawieniu się funkcjonalności admina(adminupdate.php admindodaj.php ) w menu braknie miejsca
+(chyba że adminowi zabierze się to co może spedytor) nw, może uda się zrobić wysuwaną listę z tymi plikami/linkami
+
+Daty(po lewej stronie tabeli wyjazdy) są roboczo zrobione - może da się je jakoś ładniej zrobić np obramowanie czy cos?
+
+Nie mam pomysłu na wygląd checkboxów w Usuń Wyjazd- nw może je powiększyć, a może jakiś skin da się im dać?
+(to samo usuń zgłoszenie)
+
+
+
+jakby się chciało to spróbować zrobić wygląd dla plików admina to byłoby super- coś czuje, że łatwiej to pójdzie Twojemu chłopakowi niż mi XD

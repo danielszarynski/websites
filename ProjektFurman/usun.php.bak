@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>usun wyjazdy</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src=js.js></script>
+</head>
+<body onLoad=NormalizujTabeleWyjazdy();>
+
+<!-- -----podstawowe css, do zmiany, tylko na potrzeby back------------------ -->
+<style type="text/css">
+	.ramka{border: 1px solid black;}
+</style>
+
+
+<?php
+
+//--------------------------------tabela wyjazdy---------------------------------------
+?>
+<form method=post>
+<table name=wyjazdy id=wyjazdy style="border:1px solid black;text-align: center;min-width:700px;border-collapse:collapse;">
+	
+<th style="border:1px solid black;">Data</th> <th style="border:1px solid black;">Trasa</th> <th style="border:1px solid black;">Główny kierowca</th><th style="border:1px solid black;">Asystencki kierowca</th><th style="border:1px solid black;">DEL</th>	
+
+<?php
+include("baza.php");
+
+//-------------------- wpisanie do tabeli wartosci z bazy---------------------------
+
+$stmt = $pdo->query('SELECT w.idW,w.Data,t.Trasa,ts.Kierowca
+	FROM wyjazdy w, trasa t , teams ts
+	WHERE t.idT=w.Trasa AND w.idW=ts.idW AND MONTH(Data)=05 AND YEAR(Data)=2020
+	ORDER BY Data ');
+
+$idw=0;
+
+while($row=$stmt->fetch(PDO::FETCH_ORI_NEXT) )
+      {
+
+      	if($idw!=$row[0])
+      		{
+      		echo "<tr name=zestawWyjazdow>";
+      		echo "
+      			<td class=ramka id=daty name=daty>".$row[1]."</td>
+      			<td class=ramka>".$row[2]."</td>
+      			<td class=ramka  >".$row[3]."</td>";
+      		$idw=$row[0];
+      		}
+		else      	
+			{	
+			echo "<td class=ramka name=kierowca>".$row[3]."</td>";
+      		echo "<td class=ramka><input type=checkbox name=".$row[0]."></td>";
+      		echo "</tr>";
+      		}
+      	
+      		
+
+      	}
+     
+
+ $stmt->closeCursor();
+
+//-----------koniec-------tabela--gotowa----------------------------------------------------------
+
+?>
+
+</table>
+<td><input type=submit value=usunZaznaczone name=delejtuj></td>
+</form>
+
+
+
+
+<?php
+if(isset($_POST['delejtuj']))
+{
+	$stmt = $pdo->query('SELECT idW FROM wyjazdy');
+while($row=$stmt->fetch(PDO::FETCH_ORI_NEXT))
+	{
+		if(isset($_POST[$row[0]]))
+			{
+				//usun wyjazd o tym id plus zespoly z nim powiazane 
+				echo $row[0]."<br>";
+				$pdo->query("DELETE FROM wyjazdy WHERE idW=$row[0]");
+				$pdo->query("DELETE FROM teams WHERE idW=$row[0]");
+
+			}
+
+	}
+
+
+	$stmt->closeCursor();
+	
+echo'<script type="text/javascript">
+window.alert("Wszelkie zmiany w tabeli wyjazdy zostały zapisane");
+location.href="usun.php";
+</script>';
+}
+
+
+
+
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+<?php
+//-------------ahhhh PDO lepsze od mysqli!!!-----------------------------------------
+//$wyjazdy=mysqli_query($klucz,"SELECT w.Data,w.idW,t.Trasa,u.UserName,u.idU,w.idP1,w.idP2 FROM wyjazdy w, users u, trasa t WHERE t.idT=w.Trasa   AND (w.idP1=u.idU OR w.idP2=u.idU) ORDER BY Data   ") or die("nie ma tabeli");
+
+//$idw=0;
+//$koniec=0;
+//echo sizeof($wyjazdy); 
+
+/*
+while($row=mysqli_fetch_array($wyjazdy))
+	{
+
+
+			if($row[1]!=$idw ) 
+			{
+ 				echo "<tr>";
+				echo "<td style='border:1px solid black;' id=daty name=daty>".$row[0]."</td>
+				<td style='border:1px solid black;padding:0px;'>
+					".$row[2]."</td>";$idw=$row[1];}
+ 		   		
+ 		   		if($row[4]==$row[5]){
+ 		   		echo "<td style='border:1px solid black;padding:0px;'>".$row[3]."</td>";$koniec++;}
+ 		   		else if($row[4]==$row[6])
+ 		   		{echo "<td style='border:1px solid black;padding:0px;'>".$row[3]."</td>";$koniec++;}
+ 		   		else{
+ 		   		echo "<td style='border:1px solid black;padding:0px;'></td>";}
+ 		   
+				
+
+
+if($koniec==2 ) {				
+echo "</tr>";
+$koniec=0;}
+
+
+
+
+
+}
+?>
+
+
+
+<?php
+*/
+//dobra, , trzeba to zrobic js
+/*
+$ile=1;
+for($i=0;$i<sizeof($rows);$i++)
+{
+	echo "<tr>";
+if($rows[$i][1]!=$rows[$i+1][1]){
+	echo"
+<td style='border:1px solid black;'>".$rows[$i][1]."</td><td style='border:1px solid black;'>".$rows[$i][2] ."</td> <td style='border:1px solid black;'>".$rows[$i][3] ."</td>";
+	
+$ile=1;
+}
+
+else{
+	$ile++;
+	echo"<td ></td><td style='border:1px solid black;'>".$rows[$i][2] ."</td> <td style='border:1px solid black;'>".$rows[$i][3] ."</td>";
+
+   }
+ echo "</tr>";
+ }
+*/
+//-----------------------------------------koniec mysqli---------------------------------------
+
+?>
+
+
+
+</body>
+</html>
+

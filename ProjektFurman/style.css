@@ -1,0 +1,1259 @@
+@charset "UTF-8";
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html body {
+  background-color: black;
+}
+
+html body .add section {
+  margin-bottom: 10vh;
+}
+
+html body .add section h1 {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+html body .add section form {
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+
+html body .add section form p {
+  margin-top: 5vh;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+  bottom: 40px;
+}
+
+html body .add section form p span {
+  color: red;
+}
+
+html body .add section form .form-group {
+  padding-left: 15vw;
+  width: 100%;
+  float: left;
+}
+
+html body .add section form .form-group textarea {
+  background-color: #7a7a7a;
+  color: #fff;
+  border: none;
+  width: 35vw;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+html body .add section form .form-group textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+html body .add section form .form-group textarea::-webkit-scrollbar-track {
+  background: #adadad;
+}
+
+html body .add section form .form-group textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #fd4e18;
+}
+
+html body .add section form .form-group textarea::-webkit-scrollbar-thumb:hover {
+  background: #fd4e18;
+}
+
+html body .add section form .form-group label {
+  display: block;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+html body .add section form .form-group label span {
+  color: red;
+}
+
+html body .add section form .form-group input[type='text'] {
+  width: 35vw;
+  color: #000;
+  text-transform: inherit;
+  margin-bottom: 5vh;
+}
+
+html body .add section form .form-group input[type='text']:last-child {
+  margin-bottom: 0;
+}
+
+html body .add section form .form-group input[type='date'] {
+  width: 17.5vw;
+  height: 45px;
+}
+
+html body .add section form .form-group input[type='date']::-webkit-inner-spin-button {
+  display: none;
+}
+
+html body .add section form .form-group input[type='date']::-webkit-calendar-picker-indicator {
+  color: #000;
+}
+
+html body .add section form .form-group input[type='date']::-webkit-calendar-picker-indicator:hover {
+  background-color: #7a7a7a;
+}
+
+html body .add section form .form-group input {
+  color: #fff;
+  padding: 4px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  display: block;
+  background-color: #7a7a7a;
+  border: none;
+  text-transform: uppercase;
+}
+
+html body .add section form .form-group select {
+  padding: 4px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  width: 20vw;
+  height: 45px;
+  color: #fff;
+  background-color: #7a7a7a;
+  border: none;
+  outline: none;
+}
+
+html body .add section form .form-group select option {
+  min-width: 10vw !important;
+}
+
+html body .add section form .form-group select option:hover {
+  background-color: red;
+}
+
+html body .add section form input[type='submit'] {
+  margin: 0 auto;
+  background-color: #fd4e18;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 1.9rem;
+  border-radius: 12px;
+  padding: 3px 5px 5px 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+html body .add section form input[type='submit']:hover {
+  -webkit-box-shadow: 0px 0px 15px 2px #ff7f5b;
+  box-shadow: 0px 0px 15px 2px #ff7f5b;
+}
+
+html body #login {
+  min-width: 100vw !important;
+  background-image: url("img/trucks.png");
+  min-height: 100vh;
+  min-width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html body #login .logo {
+  padding-top: 2vh;
+}
+
+html body #login .logo > img {
+  width: 100%;
+  min-height: 100%;
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html body #login form .pass:focus-within::after {
+  background: url("img/13.svg") no-repeat !important;
+  background-size: 50% !important;
+  width: 70px !important;
+  height: 70px !important;
+}
+
+html body #login form .pass input[type='password']:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+html body #login form .pass input[type='password']:focus:-ms-input-placeholder {
+  color: black;
+}
+
+html body #login form .pass input[type='password']:focus::-ms-input-placeholder {
+  color: black;
+}
+
+html body #login form .pass input[type='password']:focus::placeholder {
+  color: black;
+}
+
+html body #login form .pass::after {
+  background: url("img/12.svg") no-repeat;
+  content: '';
+  width: 70px;
+  height: 70px;
+  top: 59%;
+  right: 28%;
+  position: absolute;
+  background-size: 50%;
+}
+
+html body #login form .mail:focus-within::after {
+  background: url("img/11.svg") no-repeat !important;
+  background-size: 50% !important;
+  width: 70px !important;
+  height: 70px !important;
+}
+
+html body #login form .mail input[type='text']:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+html body #login form .mail input[type='text']:focus:-ms-input-placeholder {
+  color: black;
+}
+
+html body #login form .mail input[type='text']:focus::-ms-input-placeholder {
+  color: black;
+}
+
+html body #login form .mail input[type='text']:focus::placeholder {
+  color: black;
+}
+
+html body #login form .form-group:first-child {
+  margin-top: 10vh;
+}
+
+html body #login form .form-group:first-child::after {
+  background: url("img/3.2.svg") no-repeat;
+  content: '';
+  width: 70px;
+  height: 70px;
+  top: 32%;
+  right: 28%;
+  position: absolute;
+  background-size: 50%;
+}
+
+html body #login form .form-group input[type='text'] {
+  width: 43vw;
+  height: 10vh;
+  margin-top: 12vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  padding: 12px 25px 12px 25px;
+  font-size: 34px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  -webkit-box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+html body #login form .form-group input[type='text']::-webkit-input-placeholder {
+  color: white;
+}
+
+html body #login form .form-group input[type='text']:-ms-input-placeholder {
+  color: white;
+}
+
+html body #login form .form-group input[type='text']::-ms-input-placeholder {
+  color: white;
+}
+
+html body #login form .form-group input[type='text']::placeholder {
+  color: white;
+}
+
+html body #login form .form-group input[type='password'] {
+  width: 43vw;
+  height: 10vh;
+  margin-top: 8vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  padding: 12px 25px 12px 25px;
+  font-size: 34px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  -webkit-box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+html body #login form .form-group input[type='password']::-webkit-input-placeholder {
+  color: white;
+}
+
+html body #login form .form-group input[type='password']:-ms-input-placeholder {
+  color: white;
+}
+
+html body #login form .form-group input[type='password']::-ms-input-placeholder {
+  color: white;
+}
+
+html body #login form .form-group input[type='password']::placeholder {
+  color: white;
+}
+
+html body #login form .form-group input[type='submit'] {
+  width: 30vw;
+  height: 12vh;
+  margin-top: 7vh;
+  background-color: #fd4e18;
+  border: none;
+  font-weight: 700 !important;
+  border-radius: 25px;
+  outline: none;
+  padding: 12px 25px 12px 25px;
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  -webkit-box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+html body #login form .log-in {
+  position: relative;
+}
+
+html body #login form .log-in::before {
+  background: url("img/14.svg") no-repeat;
+  content: '';
+  width: 70px;
+  height: 70px;
+  top: 54%;
+  left: 39%;
+  position: absolute;
+  background-size: 50%;
+}
+
+html body nav {
+  min-width: 100vw !important;
+  background-image: url("img/logowanie – 2.png");
+  height: 30vh;
+  background-size: cover;
+}
+
+html body nav .menu {
+  width: 100vw !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body nav .menu i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body nav .menu img {
+  width: 300px;
+  height: 90px;
+}
+
+html body nav .menu > ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 4vh;
+  overflow: hidden;
+  margin-left: 2vw;
+}
+
+html body nav .menu > ul > li {
+  float: left;
+  margin-left: 25px;
+}
+
+html body nav .menu > ul > li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+html body nav .menu > ul > li a:hover {
+  color: #ff7f5b;
+}
+
+html body nav .menu > ul > li .selected {
+  color: #fd4e18;
+  font-weight: 500;
+}
+
+html body nav .logout {
+  text-align: right;
+  padding-top: 3vh;
+  padding-right: 3%;
+}
+
+html body nav .logout .selected {
+  color: #fd4e18;
+  font-weight: 500;
+}
+
+html body nav .logout a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+html body nav .logout a:hover {
+  color: #ff7f5b;
+}
+
+html body nav .logout a:first-child {
+  margin-left: 2vw;
+  float: left;
+}
+
+html body nav .logout a span {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+html body nav .logout a span:hover {
+  color: #ff7f5b;
+}
+
+html body nav .logout a span::before {
+  position: absolute;
+  background: url("img/zaloguj-1.svg") no-repeat;
+  content: '';
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background-size: 40%;
+  left: -40px;
+  top: 4px;
+}
+
+html body #delete h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15vh;
+}
+
+html body #delete form {
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+
+html body #delete form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20vh;
+}
+
+html body #delete form .form-group label {
+  width: 50%;
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+html body #delete form .form-group input[type='date'] {
+  width: 17.5vw;
+  height: 45px;
+  padding-left: 20px;
+  font-weight: 500;
+  background-color: #7a7a7a;
+  color: #000;
+  font-size: 28px;
+  border: none;
+}
+
+html body #delete form .form-group input[type='date']::-webkit-inner-spin-button {
+  display: none;
+}
+
+html body #delete form input[type='submit'] {
+  margin-top: 5vh !important;
+  margin: 0 auto;
+  background-color: #fd4e18;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 1.9rem;
+  border-radius: 12px;
+  padding: 3px 5px 5px 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+html body #delete form input[type='submit']:hover {
+  -webkit-box-shadow: 0px 0px 15px 2px #ff7f5b;
+  box-shadow: 0px 0px 15px 2px #ff7f5b;
+}
+
+html body #change h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+html body #change form {
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+
+html body #change form .form-group {
+  width: 100%;
+  float: left;
+}
+
+html body #change form .form-group:last-of-type {
+  margin-bottom: 7vh;
+}
+
+html body #change form .form-group label {
+  display: block;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-top: 4vh;
+}
+
+html body #change form .form-group input[type='password'] {
+  width: 40vw;
+  height: 7vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding: 12px 25px 12px 25px;
+  font-size: 34px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  -webkit-box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+html body #change form input[type='submit'] {
+  margin-top: 5vh !important;
+  margin: 0 auto;
+  background-color: #fd4e18;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 1.9rem;
+  border-radius: 12px;
+  padding: 3px 5px 5px 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+html body #change form input[type='submit']:hover {
+  -webkit-box-shadow: 0px 0px 15px 2px #ff7f5b;
+  box-shadow: 0px 0px 15px 2px #ff7f5b;
+}
+
+html body #departure section {
+  margin-bottom: 5vh;
+  padding-right: 5vw;
+}
+
+html body #departure section .left {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0;
+}
+
+html body #departure section .left table {
+  border-collapse: collapse;
+  min-width: 100%;
+  border: 3px solid #fff;
+  color: #fff;
+  text-align: center;
+}
+
+html body #departure section .left table caption {
+  caption-side: top;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+html body #departure section .left table tr {
+  border: 2px solid #fff;
+}
+
+
+html body #departure section .left table tr:last-child {
+  margin-bottom: 2vh;
+}
+
+html body #departure section .left table tr td {
+  min-width: 200px;
+  min-height: 45px;
+  border-right: 2px solid #fff;
+  font-size: 1.3rem;
+}
+
+html body #departure section .left table tr td:first-child {
+  min-width: 80px;
+  font-weight: 500;
+}
+
+html body #departure section .left table tr td:nth-child(2) {
+  min-width: 60px;
+}
+
+html body #departure section .left table tr td:nth-child(3) {
+  min-width: 300px;
+}
+
+html body #departure section .left table tr td:nth-child(6) {
+  min-width: 30px;
+}
+
+html body #departure section .left table tr th {
+  height: 45px;
+  border: 2px solid #fff;
+}
+
+html body #departure section .right {
+  padding-top: 7vh;
+  padding-left: 5vw;
+}
+
+html body #departure section .right ul {
+  padding: 0;
+  position: absolute;
+  width: 200px;
+  text-align: center;
+}
+
+html body #departure section .right ul .choose {
+  outline: none;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 200px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 5px;
+  background-color: #000;
+}
+
+html body #departure section .right ul .menu-item {
+  display: none;
+  list-style-type: none;
+  text-align: center;
+  width: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #departure section .right ul .menu-item:hover {
+  color: #fd4e18;
+}
+
+html body #departure section .right ul .menu-item a {
+  background-color: #7a7a7a;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  width: 200px;
+  list-style-type: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #departure section .right ul .menu-item a:hover {
+  color: #fd4e18;
+}
+
+html body #departure section .right ul .menu-item > ul {
+  max-width: 200px;
+  max-height: 200px;
+  overflow: auto;
+  overflow-x: hidden;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+html body #departure section .right ul .menu-item > ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+html body #departure section .right ul .menu-item > ul::-webkit-scrollbar-track {
+  background: #adadad;
+}
+
+html body #departure section .right ul .menu-item > ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #fd4e18;
+}
+
+html body #departure section .right ul .menu-item > ul::-webkit-scrollbar-thumb:hover {
+  background: #fd4e18;
+}
+
+html body #departure section .right ul .menu-item > ul > li {
+  display: none;
+  list-style-type: none;
+}
+
+html body #departure section .right ul .menu-item > ul > li > a {
+  max-width: 200px !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #departure section .right ul .menu-item > ul > li > a:hover {
+  color: #fd4e18;
+}
+
+html body #show section .right {
+  padding-right: 0 !important;
+  padding-top: 7vh;
+  padding-left: 5vw;
+}
+
+html body #show section .right ul {
+  padding: 0;
+  position: absolute;
+  width: 200px;
+  text-align: center;
+}
+
+html body #show section .right ul .choose {
+  outline: none;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 200px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 5px;
+  background-color: #000;
+}
+
+html body #show section .right ul .menu-item {
+  display: none;
+  list-style-type: none;
+  text-align: center;
+  width: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #show section .right ul .menu-item:hover {
+  color: #fd4e18;
+}
+
+html body #show section .right ul .menu-item a {
+  background-color: #7a7a7a;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  width: 200px;
+  list-style-type: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #show section .right ul .menu-item a:hover {
+  color: #fd4e18;
+}
+
+html body #show section .right ul .menu-item > ul {
+  max-width: 200px;
+  max-height: 200px;
+  overflow: auto;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+html body #show section .right ul .menu-item > ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+html body #show section .right ul .menu-item > ul::-webkit-scrollbar-track {
+  background: #adadad;
+}
+
+html body #show section .right ul .menu-item > ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #fd4e18;
+}
+
+html body #show section .right ul .menu-item > ul::-webkit-scrollbar-thumb:hover {
+  background: #fd4e18;
+}
+
+html body #show section .right ul .menu-item > ul > li {
+  display: none;
+  list-style-type: none;
+}
+
+html body #show section .right ul .menu-item > ul > li > a {
+  max-width: 200px !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #show section .right ul .menu-item > ul > li > a:hover {
+  color: #fd4e18;
+}
+
+html body #show section .left {
+  overflow-x: auto;
+}
+
+html body #show section .left table {
+  border-collapse: collapse;
+  min-width: 100%;
+  border: 3px solid #fff;
+  color: #fff;
+  text-align: center;
+}
+
+html body #show section .left table caption {
+  caption-side: top;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+html body #show section .left table tr {
+  border: 2px solid #7a7a7a;
+}
+
+html body #show section .left table tr td {
+  min-width: 200px;
+  min-height: 30px;
+  border-right: 2px solid #fff;
+}
+
+html body #show section .left table tr td:first-child {
+  min-width: 150px;
+  font-weight: 500;
+}
+
+html body #show section .left table tr td:nth-child(2) {
+  min-width: 150px;
+}
+
+html body #show section .left table tr td:nth-child(3) {
+  min-width: 250px;
+}
+
+html body #show section .left table tr th {
+  height: 45px;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 1360px) {
+  #delete form {
+    width: 70vw !important;
+  }
+  #delete form input[type='date'] {
+    width: 20vw !important;
+  }
+  nav {
+    background-size: 120% !important;
+  }
+  nav .logout {
+    padding-top: 0 !important;
+  }
+  .add section form label {
+    font-size: 1.4rem !important;
+  }
+  .add section form input[type='date'] {
+    font-size: 1.3rem !important;
+  }
+  .add section form input[type='submit'] {
+    font-size: 2rem !important;
+  }
+  .add section form select {
+    font-size: 1.3rem !important;
+  }
+  #login .log-in input[type='submit'] {
+    width: 35vw !important;
+    font-size: 30px !important;
+  }
+  #login .log-in::before {
+    left: 35% !important;
+    top: 54% !important;
+  }
+}
+
+@media (max-width: 1160px) {
+  .add section form {
+    width: 65vw !important;
+  }
+  .add section form label {
+    font-size: 1.3rem !important;
+  }
+  .add section form input[type='date'] {
+    width: 25vw !important;
+  }
+  .add section form input[type='text'] {
+    width: 35vw !important;
+    font-size: 1.1rem !important;
+  }
+  .add section form input[type='submit'] {
+    font-size: 2rem !important;
+  }
+  .add section form select {
+    width: 30vw !important;
+    font-size: 1.2rem !important;
+  }
+  #delete form {
+    width: 70vw !important;
+  }
+  #delete form input[type='date'] {
+    width: 25vw !important;
+  }
+}
+
+@media (max-width: 1015px) {
+  .add section form label {
+    font-size: 1.2rem !important;
+  }
+  .add section form input[type='date'] {
+    font-size: 1rem !important;
+  }
+  .add section form input[type='submit'] {
+    font-size: 2rem !important;
+  }
+  .add section form select {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  nav {
+    height: 27vh !important;
+    background-size: 140% !important;
+  }
+  nav .menu > img {
+    height: 75px !important;
+    width: 200px !important;
+  }
+  nav .menu > ul > li > a {
+    font-size: 1.1rem !important;
+  }
+  nav .logout > a {
+    font-size: 1.1rem !important;
+  }
+  nav .logout > a span {
+    font-size: 1.1rem !important;
+  }
+  nav .logout > a span::before {
+    background-size: 25% !important;
+    left: -30px !important;
+  }
+  #delete form {
+    width: 75vw !important;
+  }
+  #delete form input[type='date'] {
+    width: 30vw !important;
+  }
+  .add section form label {
+    font-size: 1.1rem !important;
+  }
+  .add section form input[type='date'] {
+    font-size: 0.8rem !important;
+  }
+  .add section form input[type='submit'] {
+    font-size: 2rem !important;
+  }
+  .add section form select {
+    font-size: 1.1rem !important;
+  }
+  #login form .mail input[type='text'] {
+    width: 60vw !important;
+    font-size: 28px !important;
+  }
+  #login form .mail::after {
+    right: 19% !important;
+  }
+  #login form .pass input[type='password'] {
+    width: 60vw !important;
+    font-size: 28px !important;
+  }
+  #login form .pass::after {
+    right: 19% !important;
+  }
+  #login form .log-in input[type='submit'] {
+    width: 50vw !important;
+    font-size: 30px !important;
+  }
+  #login form .log-in::before {
+    left: 30% !important;
+    top: 55% !important;
+    background-size: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  #delete form {
+    text-align: center !important;
+    width: 95vw !important;
+  }
+  #delete form .form-group {
+    margin-bottom: 10vh !important;
+    display: block !important;
+  }
+  #delete form .form-group label {
+    width: 100% !important;
+  }
+  #delete form .form-group input[type='date'] {
+    margin-top: 5vh !important;
+    width: 65vw !important;
+  }
+  nav {
+    height: 20vh !important;
+  }
+  nav .menu i {
+    display: block !important;
+    margin-top: 3vh;
+    font-size: 35px;
+    color: white;
+    font-weight: 300;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  nav .menu > img {
+    margin: 0 auto;
+    margin-top: 2vh;
+    width: 200px !important;
+    height: 75px !important;
+  }
+  nav .menu .menu-list {
+    width: 100%;
+    margin-left: 0 !important;
+    position: absolute !important;
+    display: none;
+    top: 10%;
+    background-color: black;
+    z-index: 10000;
+  }
+  nav .menu .menu-list > li {
+    float: none !important;
+    margin-left: 0 !important;
+    border-top: 1px solid #fd4e18;
+    border-bottom: 1px solid #fd4e18;
+    padding: 16px;
+  }
+  nav .menu .menu-list > li:nth-child(even) {
+    border: none !important;
+  }
+  nav .menu .menu-list > li > a {
+    font-size: 26px !important;
+  }
+  nav .logout {
+    width: 100%;
+    position: absolute !important;
+    top: 10%;
+    background-color: black;
+    z-index: 10000;
+    display: none;
+    padding-right: 0 !important;
+  }
+  nav .logout a {
+    width: 100%;
+    margin-left: 0 !important;
+    border-top: 1px solid #fd4e18;
+    border-bottom: 1px solid #fd4e18;
+    margin: 0 auto;
+    text-align: center;
+    padding: 16px;
+    display: block;
+    font-weight: 300 !important;
+    font-size: 26px !important;
+  }
+  nav .logout a span {
+    font-size: 26px !important;
+  }
+  nav .logout a span::before {
+    background-size: 40% !important;
+  }
+  #change form {
+    width: 85vw !important;
+  }
+  #change form .form-group input {
+    width: 100% !important;
+  }
+  .add section form {
+    width: 75vw !important;
+  }
+  .add section form .form-group {
+    padding-left: 0 !important;
+  }
+  .add section form .form-group textarea {
+    width: 100% !important;
+  }
+  .add section form .form-group label {
+    font-size: 1.5rem !important;
+    width: 100% !important;
+  }
+  .add section form .form-group input {
+    font-size: 1.5rem !important;
+    width: 100% !important;
+  }
+  .add section form .form-group select {
+    font-size: 1.5rem !important;
+    width: 100% !important;
+  }
+  .add section form input[type='submit'] {
+    font-size: 1.8rem !important;
+  }
+  #departure section .right {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  #departure section .right > ul {
+    position: relative !important;
+    margin: 0 auto;
+    z-index: 1000 !important;
+  }
+  #departure section .right > ul > li {
+    z-index: 1000 !important;
+  }
+  #departure section table {
+    z-index: -5 !important;
+  }
+  #show section .right {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  #show section .right > ul {
+    position: relative !important;
+    margin: 0 auto;
+    z-index: 1000 !important;
+  }
+  #show section .right > ul > li {
+    z-index: 1000 !important;
+  }
+  #show section table {
+    z-index: -5 !important;
+  }
+  #login form .mail:focus-within::after {
+    content: none !important;
+  }
+  #login form .mail input[type='text'] {
+    width: 80vw !important;
+    height: 9vh !important;
+    font-size: 24px !important;
+  }
+  #login form .mail::after {
+    background: none !important;
+  }
+  #login form .pass:focus-within::after {
+    content: none !important;
+  }
+  #login form .pass input[type='password'] {
+    width: 80vw !important;
+    height: 9vh !important;
+    font-size: 24px !important;
+  }
+  #login form .pass::after {
+    background: none !important;
+  }
+  #login form .log-in input[type='submit'] {
+    font-size: 26px !important;
+    width: 65vw !important;
+    height: 10vh !important;
+  }
+  #login form .log-in::before {
+    background: none !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

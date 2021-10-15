@@ -1,0 +1,37 @@
+1. LOGOWANIE:
+-kliknięcie na login(w prawdziym wpisanie)
+-klikniecie na haso
+-zaloguj się 
+
+2. KOMUNIKAT
+-klikniecie "ok" - nic innego nie moze dac sie kliknąć
+
+3. WYJAZDY
+-wybierz rok i miesiac
+-2019 i styczen
+-mozna zamknąć całość poprzez "wybierz rok.." lub tylko 2019(w kółko)
+
+-wybrac 2020 i marzec
+
+czarne to wybrane w danym momencie rok i miesiac LUB obecna jezeli nic wczesniej sie nie wybrało
+
+4.POKAŻ ZGŁOSZENIA
+- ta sama zasada działania wybrania roku i miesiaca jak w wyjazdach
+-wybrac luty
+- wybrac marzec(przykład braku danych)
+
+5. DODAJ WYJAZD
+- dd.mm.rrrr działa jak na stronie (mozemy kliknąć sam dd aby wpisac ręcznie dzien itd)
+- wybieramy strzałeczke w dół przy dacie aby otworzyć kalendarz
+- ramka pokazuje że obecny dzien (na makiecie 27 marca)
+- wybieramy 5 marca
+
+-klikamy na pole pod "kto"
+-wybieramy pracownika( pracownik1)
+
+- dla ułatwienia z kim i trasa tylko kliknąć w okienko
+-zatwiedz
+
+przenosi na "pokaż wyjazdy" z komunikatem, że dodano. Kliknąć "ok"
+
+-wyloguj się
