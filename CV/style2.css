@@ -1,0 +1,52 @@
+body {
+   
+    width: 57vw;
+    margin: 0 auto;
+}
+
+.small_pic {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 8%;
+}
+
+.big_title_obj {
+    position: relative;
+    top: 30%;
+    left: 8%;
+    /* margin: 0 auto; */
+}
+
+.regular_title_obj {
+    position: relative;
+    top: 40%;
+    left: 16%;
+    /* margin: 0 auto; */
+}
+
+.little_title_obj {
+    position: relative;
+    top: 35%;
+    left: 35%;
+    /* margin: 0 auto; */
+}
+
+.hidden_text {
+    color: white;
+    visibility: hidden;
+}
+
+.painted {
+    background-color: rgb(102, 168, 255);
+    font-weight: bold;
+    color: white;
+}
+
+
+/* div {
+    border: 1px solid red;
+} */
+
+.bordered {
+    border: 1px solid black;
+}
